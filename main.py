@@ -3,11 +3,11 @@ with open('in.txt', 'r') as f_in:
 sentences = input_text.split('.')
 output_text = ""
 for index in range(0, 4):
-	senten = sentences[index]
-	words = senten.split(' ') 
+	sentence = sentences[index]
+	words = sentence.split(' ') 
 	words.reverse()
-	senten = ' '.join(words)
-	output_text = output_text + senten
-	print(senten)	
+	sentence = ' '.join(words)	
+	output_text = output_text + sentence
+	print(sentence)	
 with open('out.txt', 'w') as f_out:
 	f_out.write(output_text)
