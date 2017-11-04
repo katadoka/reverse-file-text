@@ -8,6 +8,6 @@ This program performs the following tasks:
 #### content of the input file: 
   I write some here. And few le77tters, for example: 55 and 4.
 
-#### вихідний файл для цього випадку:
+#### source file for this case:
   here some write I. 8 and 110 example: for le154tters few and.
 
