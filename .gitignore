@@ -32,7 +32,6 @@ wheels/
 *.spec
 
 # Installer logs
-out.txt
 pip-log.txt
 pip-delete-this-directory.txt
 
@@ -101,3 +100,5 @@ ENV/
 # mypy
 .mypy_cache/
 
+# Custom ignore files
+out.txt

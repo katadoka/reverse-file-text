@@ -3,7 +3,7 @@ with open('in.txt', 'r') as f_in:
 sentences = input_text.split('. ')
 output_text = ''
 point = '. '
-for index in range(0, 4):
+for index in range(len(sentences)):
 	sentence = sentences[index]
 	words = sentence.split(' ')
 	words.reverse()
