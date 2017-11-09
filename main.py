@@ -1,13 +1,14 @@
 with open('in.txt', 'r') as f_in:
 	input_text = f_in.read()
-sentences = input_text.split('. ')
+sentences = input_text.split('.')
 output_text = ''
 point = '. '
-for index in range(len(sentences)):
-	sentence = sentences[index]
+for sentence in sentences:
 	words = sentence.split(' ')
-	words.reverse()
-	sentence = ' '.join(words)
+	words.reverse()	
+	sentence = ' '.join(words) 
+	if sentence == '':
+		continue	
 	output_text = output_text + sentence + point
 	print(sentence + point)
 with open('out.txt', 'w') as f_out:
