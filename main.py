@@ -5,10 +5,11 @@ output_text = ''
 point = '. '
 for sentence in sentences:
 	words = sentence.split(' ')
-	words.reverse()	
+	words.reverse()
 	sentence = ' '.join(words) 
 	if sentence == '':
-		continue	
+		continue
+	sentence = sentence.strip(' ')
 	output_text = output_text + sentence + point
 	print(sentence + point)
 with open('out.txt', 'w') as f_out:
